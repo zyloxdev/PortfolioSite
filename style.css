@@ -15,6 +15,8 @@ body {
   -ms-user-select: none; 
   user-select: none;
   font-family: 'JetbrainsMono';
+  padding: 0; 
+  margin: 0;
 }
 
 
@@ -35,6 +37,7 @@ h1 {
   color: white;
   text-align: center;
   margin: auto;
+  text-shadow: 0 0 10px #fff;
 }
 
 .btn {
@@ -73,9 +76,42 @@ h1 {
   background-color: black;
   transition: transform 0.3s ease;
 }
-.content {
-  position: relative;
-  width: 80%;
-  margin: 0 auto;
+
+p {
+  color: white;
   text-align: center;
+  text-shadow: 0 0 10px #fff;
+}
+
+.topText {
+display: flex;
+align-items: center;
+flex-direction: column;
+white-space: nowrap;
+width: 200%;
+height: 13em;
+top: 50%;
+transform: translate(0%, -50%);
+}
+
+.top {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+}
+
+.vids {
+  display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: row;
+height: 35em;
+margin: 5em;
+}
+
+.vids iframe{
+  border-radius: 1em;
+  text-shadow: 0 0 10px #fff;
+  padding-right: 1em;
 }
